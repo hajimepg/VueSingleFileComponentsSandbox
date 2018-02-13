@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/normalize.css">
+    </head>
+
+    <body>
+        <div id="app">
+            {{ count }}
+            <is-even></is-even>
+            <button v-on:click="increment">increment</button>
+            <double-up></double-up>
+        </div>
+        <script src="../dist/vuex.js"></script>
+    </body>
+</html>
