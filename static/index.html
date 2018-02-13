@@ -6,7 +6,43 @@
     </head>
 
     <body>
-        <div id="app">{{ message }}</div>
+        <div id="app">
+            {{ message }}
+            <my-component name="first"  my-message="hoge"></my-component>
+            <my-component name="second" my-message="fuga"></my-component>
+            <hr/>
+
+            <input v-model="inputMessage"></input>
+            <my-component name="second" v-bind:my-message="inputMessage"></my-component>
+            <hr/>
+
+            <my-component2 v-on:event="eventHandler"></my-component2>
+            {{ counter }}
+            <hr/>
+
+            <div>
+                <h2>title</h2>
+                <my-component3>
+                    <p>hogehoge</p>
+                    <p>fugafuga</p>
+                </my-component3>
+            </div>
+            <hr/>
+
+            <div>
+                <h2>title</h2>
+                <my-component3></my-component3>
+            </div>
+            <hr/>
+
+            <my-component4>
+                <h1 slot="header">Header</h1>
+
+                <p>CONTENTS</p>
+
+                <p slot="footer">Footer</p>
+            </my-component4>
+        </div>
         <script src="../dist/bundle.js"></script>
     </body>
 </html>
