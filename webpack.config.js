@@ -1,10 +1,10 @@
 const path = require("path");
 
 module.exports = {
-    entry: "./src/main.ts",
+    entry: "./src/basic.ts",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js"
+        filename: "basic.js"
     },
     module: {
         rules: [
