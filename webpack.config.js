@@ -1,7 +1,7 @@
 const path = require("path");
 
 const resolveConfig = {
-    extensions: [".js", ".ts", ".vue"],
+    extensions: [".js", ".ts"],
     alias: {
         "vue$": "vue/dist/vue.esm.js",
         "vuex$": "vuex/dist/vuex.esm.js"
