@@ -5,6 +5,7 @@ module.exports = {
         basic: "./src/basic.ts",
         vuex: "./src/vuex.ts",
         sfc: "./src/sfc/main.ts",
+        sfc_vuex: "./src/sfc_vuex/main.ts",
     },
     output: {
         path: path.resolve(__dirname, "dist"),
