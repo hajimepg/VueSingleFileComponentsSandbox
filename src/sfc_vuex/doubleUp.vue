@@ -3,11 +3,13 @@
 </template>
 
 <script lang="ts">
-    export default {
-        methods: {
-            doubleUp() {
-                (this as any).$store.commit("DOUBLE_UP_COUNTER");
-            }
+    import Vue from "vue";
+    import Component from "vue-class-component";
+
+    @Component({})
+    export default class DoubleUp extends Vue {
+        doubleUp() {
+            this.$store.commit("DOUBLE_UP_COUNTER");
         }
     };
 </script>

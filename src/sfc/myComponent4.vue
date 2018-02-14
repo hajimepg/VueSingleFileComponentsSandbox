@@ -13,11 +13,13 @@
 </template>
 
 <script lang="ts">
-    export default {
-        methods: {
-            onButtonClick() {
-                (this as any).$emit("event");
-            }
+    import Vue from "vue";
+    import Component from "vue-class-component";
+
+    @Component({})
+    export default class MyComponent4 extends Vue {
+        onButtonClick() {
+            this.$emit("event");
         }
     };
 </script>
