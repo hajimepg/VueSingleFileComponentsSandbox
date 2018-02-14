@@ -6,7 +6,7 @@
     import Vue from "vue";
     import Component from "vue-class-component";
 
-    @Component({})
+    @Component
     export default class DoubleUp extends Vue {
         doubleUp() {
             this.$store.commit("DOUBLE_UP_COUNTER");
